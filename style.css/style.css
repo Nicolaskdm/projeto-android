@@ -139,8 +139,7 @@ main a:hover{
 }
 
 main img{
-    display: block;
-    margin: auto;
+   width: 100%;
 }
 
 main img.pequena{
