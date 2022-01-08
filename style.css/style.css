@@ -35,22 +35,47 @@ body{
     font-family: var(--fonte-padrao);
 }
 
-a.externo::after{
-    content: '\00A0\1F517';
+.nav-itens{
+    display: inline;
+}
+
+.nav-link{
+    position: relative;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: var(--fonte-padrao);
+    letter-spacing: 0.5px;
+}
+
+.nav-link::after{
+    content: "";
+    position: absolute;
+    background-color: var(--cor5);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.nav-link:hover:after{
+    width: 100%;
 }
 
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 5px;
 }
 
 header > h1{
     color: white;
     font-family: var(--fonte-destaque);
     font-size: 3em;
-    margin-bottom: 20px;
+    margin: 45px;
     text-shadow: 4px 8px 0px rgba(0, 0, 0, 0.274);
     
 }
