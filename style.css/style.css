@@ -35,15 +35,9 @@ body{
     font-family: var(--fonte-padrao);
 }
 
-.nav-itens{
-    display: inline;
-}
-
 .nav-link{
     position: relative;
     padding: 0 20px;
-    text-decoration: none;
-    color: #fff;
     font-size: 20px;
     font-family: var(--fonte-padrao);
     letter-spacing: 0.5px;
